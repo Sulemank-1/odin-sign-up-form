@@ -43,6 +43,7 @@ img{
 .right-side-top{
   font-weight: bold;
   padding: 80px 60px 35px 25px;
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .right-side-top > p:first-child{
