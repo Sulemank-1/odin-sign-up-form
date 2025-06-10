@@ -26,7 +26,6 @@
   justify-content: center;
   margin-top: 70px;
   background-color: rgba(0, 0, 0, 0.6);
-  
 }
 
 img{
@@ -54,9 +53,13 @@ img{
 }
 
 
+
+
 .italic{
   font-style: italic;
 }
 
-
+input{
+  display: block;
+}
 
