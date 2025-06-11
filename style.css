@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'norseBold';
+  src: url(assets/Norse-Bold.otf) format('opentype'); 
+}
+
+:root{
+  --left-padding: 30px;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +15,10 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+#norse-font{
+  font-family: 'norseBold';
+  font-size: 60px;
+}
 
 .container{
   display: flex;
@@ -24,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 120px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -33,8 +47,8 @@ img{
 }
 
 .right-side-top{
-  font-weight: bold;
-  padding: 80px 60px 35px 25px;
+  font-weight: 500;
+  padding: 80px 60px 35px var(--left-padding);
   background-color: rgba(0, 0, 0, 0.02);
 }
 
@@ -42,25 +56,48 @@ img{
   margin-bottom: 20px;
 }
 
-.right-side-bottom > p:first-child{
+.right-side-middle{
+  padding-left: var(--left-padding);
+  box-shadow: 0  4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.right-side-middle > p:first-child{
   font-weight: 500;
   font-size: 18px;
   margin: 15px 0 15px 0;
 }
 
-.form-top{
+#form{
   display: flex;
+  column-gap: 30px;
 }
 
-
+form div{
+  margin-bottom: 20px;
+}
 
 
 .italic{
   font-style: italic;
 }
 
+.green-color{
+  color: #596D48;
+}
+
 input{
   display: block;
+  width: 180px;
+  height: 24px;
+  outline: none;
+  border-width: 0.5px;
+  border-radius: 3px;
+  border: 0.7px solid #E5E7EB;
+}
+
+input:focus{
+  border-color: blue;
+  box-shadow: 0  4px 4px -2px rgba(0, 0, 0, 0.2);;
 }
 
 label{
@@ -70,3 +107,21 @@ label{
   text-transform: uppercase;
 }
 
+
+.right-side-bottom{
+  padding: 20px 0 0 var(--left-padding);
+}
+
+button{
+  background-color: #596D48;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.right-side-bottom > p{
+  font-weight: 500;
+} 
